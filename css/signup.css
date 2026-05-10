@@ -1,0 +1,313 @@
+/* =========================
+   SIGNUP PAGE STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.signup-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-box {
+    background: white;
+    border-radius: 12px;
+    padding: 50px 40px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.signup-box h1 {
+    color: #333;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.signup-box .subtitle {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   FORM STYLES
+========================= */
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3497a5;
+    box-shadow: 0 0 0 3px rgba(52, 151, 165, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+/* =========================
+   PASSWORD REQUIREMENTS
+========================= */
+
+.password-requirements {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.password-requirements p {
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.password-requirements ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.password-requirements li {
+    color: #666;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.requirement {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.requirement.active {
+    background: #4caf50;
+    color: white;
+}
+
+/* =========================
+   TERMS CHECKBOX
+========================= */
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+}
+
+.terms input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.terms a {
+    color: #3497a5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   SIGNUP BUTTON
+========================= */
+
+.signup-submit-btn {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #3497a5 0%, #2a7a8a 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.signup-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(52, 151, 165, 0.3);
+}
+
+.signup-submit-btn:active {
+    transform: translateY(0);
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.divider::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.social-btn {
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    background: white;
+    color: #333;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-btn:hover {
+    border-color: #3497a5;
+    background: #f0f9fa;
+}
+
+.google-btn::before {
+    content: '🔵';
+    font-size: 18px;
+}
+
+/* =========================
+   LOGIN LINK
+========================= */
+
+.login-text {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.login-text a {
+    color: #3497a5;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.login-text a:hover {
+    color: #267a8a;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 600px) {
+    .signup-box {
+        padding: 30px 20px;
+    }
+
+    .signup-box h1 {
+        font-size: 24px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}

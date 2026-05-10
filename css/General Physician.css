@@ -1,0 +1,194 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+body{
+    background: #dfe5ee;
+    color: #222;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+.container{
+    width: 100%;
+    max-width: 1050px;
+    margin: 120px auto 50px;
+    padding: 0 20px;
+}
+
+/* =========================
+   PAGE HEADER
+========================= */
+.container .header{
+    background: #2f9aa3;
+    color: white;
+    padding: 22px 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.container .header h1{
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.container .header p{
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* =========================
+   DOCTOR CARD
+========================= */
+.doctor-card{
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px 25px;
+    margin-bottom: 22px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.doctor-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+.doctor-details{
+    flex: 1;
+}
+
+.doctor-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #edf5ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+    flex-shrink: 0;
+}
+
+/* =========================
+   TEXT
+========================= */
+.doctor-name{
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.doctor-tag{
+    display: inline-block;
+    background: #dff2ff;
+    color: #0082cc;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.info-row{
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+/* =========================
+   RIGHT SIDE
+========================= */
+.price-section{
+    text-align: right;
+    min-width: 170px;
+}
+
+.fee-label{
+    display: block;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.fee-amount{
+    display: block;
+    font-size: 40px;
+    color: #ff6b00;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.consult-btn{
+    display: inline-block;
+    background: #0095d9;
+    color: white;
+    text-decoration: none;
+    padding: 14px 26px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.consult-btn:hover{
+    background: #007db6;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width: 768px){
+
+    .doctor-card{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .price-section{
+        width: 100%;
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .doctor-name{
+        font-size: 24px;
+    }
+
+    .fee-amount{
+        font-size: 32px;
+    }
+
+    .container .header h1{
+        font-size: 28px;
+    }
+}

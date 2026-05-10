@@ -1,0 +1,429 @@
+/* =========================
+   CONTACT US PAGE STYLES
+========================= */
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: calc(100vh - 200px);
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* =========================
+   CONTACT FORM STYLES
+========================= */
+
+.contact-form-wrapper {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-wrapper h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.contact-form-wrapper .subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3497a5;
+    box-shadow: 0 0 8px rgba(52, 151, 165, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #3497a5 0%, #2a7a89 100%);
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(52, 151, 165, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.form-message {
+    margin-top: 15px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+}
+
+.form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    display: block;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    display: block;
+    border: 1px solid #f5c6cb;
+}
+
+/* =========================
+   CONTACT INFO STYLES
+========================= */
+
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-info-wrapper h2 {
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.info-icon {
+    font-size: 32px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-content h3 {
+    font-size: 16px;
+    color: #3497a5;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.info-content p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.info-content a {
+    color: #3497a5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.info-content a:hover {
+    color: #2a7a89;
+}
+
+/* =========================
+   SOCIAL LINKS STYLES
+========================= */
+
+.social-links {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.social-links h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #3497a5 0%, #2a7a89 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(52, 151, 165, 0.3);
+}
+
+/* =========================
+   FAQ SECTION
+========================= */
+
+.faq-section {
+    padding: 60px 20px;
+    background: white;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px;
+    background: #f5f7fa;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.faq-question:hover {
+    background: #e8ecf1;
+    color: #3497a5;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 24px;
+    color: #3497a5;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question {
+    background: #3497a5;
+    color: white;
+}
+
+.faq-item.active .faq-question::after {
+    transform: rotate(45deg);
+    color: white;
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    padding: 20px;
+    max-height: 500px;
+}
+
+.faq-answer p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-form-wrapper {
+        padding: 30px 20px;
+    }
+
+    .contact-form-wrapper h1 {
+        font-size: 24px;
+    }
+
+    .contact-info-wrapper h2 {
+        font-size: 22px;
+    }
+
+    .faq-section {
+        padding: 40px 20px;
+    }
+
+    .faq-section h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .faq-question {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .faq-answer p {
+        font-size: 13px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-wrapper {
+        padding: 20px 15px;
+    }
+
+    .contact-form-wrapper h1 {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .info-card {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .info-icon {
+        font-size: 28px;
+    }
+
+    .info-content h3 {
+        font-size: 14px;
+    }
+
+    .info-content p {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Lab Test - Medifast</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/book-lab.css">
+    <link rel="stylesheet" href="../css/book-lab-doctors.css">
+
+    
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo-section">
+            <div class="logo-icon">+</div>
+            <div class="logo">Medifast</div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="nav-link">Sign In</a></li>
+                <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="lab-tests">
+            <h1>Lab Tests</h1>
+            <div class="test-category">
+                <h2>Blood Tests</h2>
+                <p>Comprehensive blood tests to assess your health.</p>
+                <button class="book-test-btn" data-test="Blood Tests">Book Now</button>
+            </div>
+            <div class="test-category">
+                <h2>Imaging Tests</h2>
+                <p>Advanced imaging tests for accurate diagnosis.</p>
+                <button class="book-test-btn" data-test="Imaging Tests">Book Now</button>
+            </div>
+            <div class="test-category">
+                <h2>Health Packages</h2>
+                <p>All-in-one health packages for complete check-ups.</p>
+                <button class="book-test-btn" data-test="Health Packages">Book Now</button>
+            </div>
+        </section>
+
+        <!-- Doctors Section (similar layout to other pages) -->
+        <section class="doctors">
+            <div class="container">
+                <div class="header">
+                    <h1>Consult a Doctor for Lab Guidance</h1>
+                    <p>Book an expert consult before choosing your tests</p>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-img">👨‍⚕️</div>
+                    <div class="doctor-details">
+                        <p class="doctor-name">Dr. Rahul Verma</p>
+                        <span class="doctor-tag">General Physician</span>
+                        <p class="info-row">Experience: 12+ Years</p>
+                        <p class="info-row">Languages: English, Hindi</p>
+                    </div>
+                    <div class="price-section">
+                        <span class="fee-label">Consultation Fee</span>
+                        <span class="fee-amount">₹500</span>
+                        <a href="#" class="consult-btn">Online Consult</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-img">👩‍⚕️</div>
+                    <div class="doctor-details">
+                        <p class="doctor-name">Dr. Neha Joshi</p>
+                        <span class="doctor-tag">Internal Medicine</span>
+                        <p class="info-row">Experience: 10 Years</p>
+                        <p class="info-row">Languages: Hindi, English</p>
+                    </div>
+                    <div class="price-section">
+                        <span class="fee-label">Consultation Fee</span>
+                        <span class="fee-amount">₹550</span>
+                        <a href="#" class="consult-btn">Online Consult</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-img">👨‍⚕️</div>
+                    <div class="doctor-details">
+                        <p class="doctor-name">Dr. S. Singh</p>
+                        <span class="doctor-tag">Health Specialist</span>
+                        <p class="info-row">Experience: 15 Years</p>
+                        <p class="info-row">Languages: Hindi, Punjabi</p>
+                    </div>
+                    <div class="price-section">
+                        <span class="fee-label">Consultation Fee</span>
+                        <span class="fee-amount">₹550</span>
+                        <a href="#" class="consult-btn">Online Consult</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-img">👨‍⚕️</div>
+                    <div class="doctor-details">
+                        <p class="doctor-name">Dr. Pankaj Rao</p>
+                        <span class="doctor-tag">Diagnostic Specialist</span>
+                        <p class="info-row">Experience: 8 Years</p>
+                        <p class="info-row">Languages: English, Hindi</p>
+                    </div>
+                    <div class="price-section">
+                        <span class="fee-label">Consultation Fee</span>
+                        <span class="fee-amount">₹500</span>
+                        <a href="#" class="consult-btn">Online Consult</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-img">👩‍⚕️</div>
+                    <div class="doctor-details">
+                        <p class="doctor-name">Dr. Ayesha Khan</p>
+                        <span class="doctor-tag">Preventive Care</span>
+                        <p class="info-row">Experience: 20 Years</p>
+                        <p class="info-row">Languages: Telugu, English</p>
+                    </div>
+                    <div class="price-section">
+                        <span class="fee-label">Consultation Fee</span>
+                        <span class="fee-amount">₹600</span>
+                        <a href="#" class="consult-btn">Online Consult</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-icon">🧪</div>
+                <h2 id="selectedService">Lab Test Booking</h2>
+                <p class="coming-soon">Booking feature coming soon</p>
+                <p class="modal-message">We're working hard to bring you an amazing booking experience. Stay tuned!</p>
+                <button class="modal-btn" id="closeModalBtn">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Medifast. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/book-lab.js"></script>
+</body>
+</html>

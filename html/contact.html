@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Medifast</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact-us.css">
+
+    
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo-section">
+            <div class="logo-icon">+</div>
+            <div class="logo">Medifast</div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="nav-link">Sign In</a></li>
+                <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Us Section -->
+        <section class="contact-section">
+            <div class="contact-container">
+                
+                <!-- Left Side - Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h1>Get In Touch</h1>
+                    <p class="subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="appointment">Appointment Issue</option>
+                                <option value="prescription">Prescription Help</option>
+                                <option value="billing">Billing Inquiry</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="feedback">General Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Please describe your message in detail..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+
+                <!-- Right Side - Contact Information -->
+                <div class="contact-info-wrapper">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Address</h3>
+                            <p>123 Medical Plaza, Healthcare Avenue<br>New Delhi, India - 110001</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>+91 1800-123-4567<br>Mon - Fri, 9AM - 6PM IST</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p><a href="mailto:support@medifast.com">support@medifast.com</a><br><a href="mailto:info@medifast.com">info@medifast.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-content">
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" title="Facebook">f</a>
+                            <a href="#" title="Twitter">𝕏</a>
+                            <a href="#" title="Instagram">📷</a>
+                            <a href="#" title="LinkedIn">in</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">How can I book an appointment?</button>
+                    <div class="faq-answer">
+                        <p>You can book an appointment through our website by navigating to the "Consult Doctor" section, selecting your preferred doctor and time slot, and completing the booking process.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What is your cancellation policy?</button>
+                    <div class="faq-answer">
+                        <p>Appointments can be cancelled up to 24 hours in advance for a full refund. Cancellations made within 24 hours may incur a cancellation fee.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">How long does medicine delivery take?</button>
+                    <div class="faq-answer">
+                        <p>Standard delivery takes 2-3 business days. Express delivery is available in select areas with same-day or next-day delivery options.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Is my health information secure?</button>
+                    <div class="faq-answer">
+                        <p>Yes, we use industry-standard encryption and comply with all healthcare privacy regulations to ensure your data is completely secure and confidential.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Do you offer corporate wellness programs?</button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer customized corporate wellness programs. Please contact our corporate partnerships team at corporate@medifast.com for more details.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Medifast. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/contact-us.js"></script>
+</body>
+</html>
