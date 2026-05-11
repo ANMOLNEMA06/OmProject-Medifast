@@ -14,9 +14,106 @@ body {
 
 /* Header */
 
+/* =========================
+   HERO SECTION FIX
+========================= */
 
+.lab-tests{
+    position: relative;
+    height: 550px;
 
+    margin: 20px;
 
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url('../images/bannerlabtest.png');
+
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+}
+
+/* Center Text */
+
+.hero-text{
+    max-width: 850px;
+    z-index: 2;
+}
+
+/* White Main Heading */
+
+.hero-text h1{
+    font-size: 64px !important;
+
+    line-height: 1.1;
+
+    color: white !important;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* White Paragraph */
+
+.hero-text p{
+    font-size: 24px;
+
+    color: white;
+
+    font-weight: 500;
+
+    text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+/* Phone Number */
+
+.hero-text strong{
+    color: #ffffff;
+}
+
+/* REMOVE OLD BLUE COLOR */
+
+.lab-tests h1{
+    color: white !important;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .lab-tests{
+        height: 400px;
+        padding: 20px;
+    }
+
+    .hero-text h1{
+        font-size: 38px !important;
+    }
+
+    .hero-text p{
+        font-size: 18px;
+    }
+}
 /* Main Section */
 main {
     padding: 40px 20px;
@@ -116,6 +213,7 @@ main {
     transform: scale(1.02);
     box-shadow: 0 5px 20px rgba(255, 107, 107, 0.3);
 }
+
 
 /* Footer */
 footer {

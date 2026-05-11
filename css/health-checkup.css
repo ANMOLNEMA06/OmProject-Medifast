@@ -22,9 +22,136 @@ main {
     margin: 0 auto;
 }
 
+/* =========================
+   HERO SECTION
+========================= */
+
+.checkups-section{
+
+    position: relative;
+
+    height: 520px;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url('../images/ba2.png');
+
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+
+    margin-bottom: 60px;
+}
+
+/* Overlay */
+
+.hero-overlay{
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.35)
+    );
+
+    z-index: 1;
+}
+
+/* Content */
+
+.hero-content{
+
+    position: relative;
+
+    z-index: 2;
+
+    padding: 20px;
+}
+
+/* Heading */
+
+
+.hero-content h1{
+
+    font-size: 64px !important;
+
+    line-height: 1.1;
+
+    color: white !important;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* White Paragraph */
+
+.hero-content p{
+
+    font-size: 24px;
+
+    color: white;
+
+    font-weight: 500;
+
+    text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+/* Phone Number */
+
+.hero-content strong{
+
+    color: #ffffff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .checkups-section{
+        height: 420px;
+    }
+
+    .hero-content h1{
+
+        font-size: 42px;
+
+        line-height: 1.2;
+    }
+
+    .hero-content p{
+
+        font-size: 17px;
+    }
+}
 /* Checkups Section */
-.checkups-section {
-    background: white;
+/* .checkups-section {
+    background-image:url('../images/bannerHelth.png');
+       background-size:cover;
+    background-position:center;
     padding: 60px 40px;
     border-radius: 15px;
     text-align: center;
@@ -60,7 +187,7 @@ main {
 .checkups-section button:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 20px rgba(255, 107, 107, 0.3);
-}
+} */
 
 /* Footer */
 footer {
@@ -270,4 +397,4 @@ footer p {
     .checkups-section button {
         width: 100%;
     }
-}
+

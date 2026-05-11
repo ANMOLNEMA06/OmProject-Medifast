@@ -9,6 +9,28 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.hero{
+    position:relative;
+    height:550px;
+    margin:20px;
+    border-radius:18px;
+    overflow:hidden;
+
+    display:flex;
+    align-items:center;
+
+    padding:60px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.35),
+    rgba(0,0,0,0.35)),
+    url('../images/banner.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    box-shadow:0 10px 35px rgba(0,0,0,0.15);
+}
 
 /* =========================
    BODY

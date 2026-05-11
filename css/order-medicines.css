@@ -1,264 +1,363 @@
-/* Global Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    color: #333;
-    line-height: 1.6;
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+    color:#222;
 }
 
-/* Header */
+/* HERO SECTION */
 
+.medicine-order{
+    width:85%;
+    margin:40px auto;
+    padding:100px 40px;
+    border-radius:24px;
+    text-align:center;
 
-/* Main Content */
-main {
-    padding: 60px 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    background:
+    linear-gradient(rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)),
+    url('../images/banner22.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    box-shadow:0 12px 35px rgba(0,0,0,0.12);
 }
 
-/* Medicine Order Section */
-.medicine-order {
-    background-image: url('../images/banner22.jpg');
-    padding: 60px 40px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 10px 40px rgba(0, 119, 182, 0.15);
-    margin-bottom: 40px;
+.medicine-order h1{
+    font-size:52px;
+    color:white;
+    margin-bottom:18px;
+    font-weight:700;
 }
 
-.medicine-order h1 {
-    font-size: 42px;
-    color: #0077b6;
-    margin-bottom: 20px;
-    font-weight: 700;
+.medicine-order p{
+    color:#f1f1f1;
+    font-size:18px;
+    margin-bottom:30px;
 }
 
-.medicine-order p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 30px;
+#orderNowBtn{
+    background:#ff6b6b;
+    color:white;
+    border:none;
+    padding:15px 38px;
+    border-radius:12px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
 }
 
-.medicine-order button {
-    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
-    color: white;
-    border: none;
-    padding: 14px 40px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s ease;
+#orderNowBtn:hover{
+    background:#ff4d4d;
+    transform:translateY(-3px);
 }
 
-.medicine-order button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 20px rgba(255, 107, 107, 0.3);
+/* DOCTOR SECTION */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* Footer */
-footer {
-    background: linear-gradient(135deg, #023e8a 0%, #0077b6 100%);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    margin-top: 60px;
-    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+    color:#222;
 }
 
-footer p {
-    margin: 0;
-    font-weight: 500;
+/* HERO SECTION */
+
+.medicine-order{
+    width:85%;
+    margin:40px auto;
+    padding:100px 40px;
+    border-radius:24px;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)),
+    url('../images/banner22.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    box-shadow:0 12px 35px rgba(0,0,0,0.12);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 20px;
+.medicine-order h1{
+    font-size:52px;
+    color:white;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.medicine-order p{
+    color:#f1f1f1;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+#orderNowBtn{
+    background:#ff6b6b;
+    color:white;
+    border:none;
+    padding:15px 38px;
+    border-radius:12px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#orderNowBtn:hover{
+    background:#ff4d4d;
+    transform:translateY(-3px);
+}
+
+/* HEALTH CONDITIONS SECTION */
+
+.health-section{
+    padding:20px 0 70px;
+}
+
+.container{
+    width:85%;
+    margin:auto;
+}
+
+/* HEADER */
+
+.health-header{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    margin-bottom:30px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.06);
+}
+
+.health-header h1{
+    font-size:36px;
+    color:#0d3b66;
+    margin-bottom:10px;
+}
+
+.health-header p{
+    color:#666;
+    font-size:15px;
+}
+
+/* GRID */
+
+.health-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+
+.health-card{
+    background:white;
+    border-radius:20px;
+    padding:30px 20px;
+    text-align:center;
+
+    box-shadow:0 5px 25px rgba(0,0,0,0.07);
+
+    transition:0.3s ease;
+    cursor:pointer;
+}
+
+.health-card:hover{
+    transform:translateY(-5px);
+}
+
+.health-icon{
+    width:80px;
+    height:80px;
+    margin:auto;
+    margin-bottom:18px;
+
+    background:#eef6ff;
+    border-radius:20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:40px;
+}
+
+.health-card h3{
+    font-size:20px;
+    font-weight:600;
+    color:#222;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .health-header{
+        text-align:center;
     }
 
-    nav ul {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    main {
-        padding: 40px 20px;
-    }
-
-    .medicine-order {
-        padding: 40px 20px;
-    }
-
-    .medicine-order h1 {
-        font-size: 28px;
-    }
-
-    .medicine-order p {
-        font-size: 16px;
-    }
-
-    .medicine-order button {
-        width: 100%;
+    .medicine-order h1{
+        font-size:38px;
     }
 }
 
-/* =========================
-   BOOKING MODAL STYLES
-========================= */
+@media(max-width:600px){
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    animation: fadeIn 0.3s ease-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+    .medicine-order{
+        width:92%;
+        padding:70px 20px;
     }
-    to {
-        opacity: 1;
-    }
-}
 
-.modal-content {
-    background-color: white;
-    margin: 10% auto;
-    padding: 0;
-    border-radius: 15px;
-    width: 90%;
-    max-width: 500px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    animation: slideIn 0.3s ease-out;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
+    .container{
+        width:92%;
     }
-    to {
-        transform: translateY(0);
-        opacity: 1;
+
+    .medicine-order h1{
+        font-size:30px;
+    }
+
+    .health-header h1{
+        font-size:28px;
+    }
+
+    .health-card h3{
+        font-size:18px;
     }
 }
+/* FOOTER */
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 15px 20px;
-    cursor: pointer;
-    transition: 0.3s;
+footer{
+    background:#0d3b66;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:40px;
 }
 
-.close:hover,
-.close:focus {
-    color: #0077b6;
-}
+/* RESPONSIVE */
 
-.modal-body {
-    padding: 40px;
-    text-align: center;
-}
+@media(max-width:900px){
 
-.modal-icon {
-    font-size: 48px;
-    margin-bottom: 20px;
-    animation: bounce 0.6s ease-out;
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
+    .doctor-card{
+        flex-direction:column;
+        align-items:flex-start;
     }
-    50% {
-        transform: translateY(-10px);
+
+    .price-section{
+        margin-top:20px;
+        width:100%;
+        text-align:left;
+    }
+
+    .doctors .header{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .medicine-order h1{
+        font-size:38px;
     }
 }
 
-.modal-body h2 {
-    color: #0077b6;
-    font-size: 24px;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
+@media(max-width:600px){
 
-.coming-soon {
-    font-size: 18px;
-    color: #ff6f00;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.modal-message {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-.modal-btn {
-    background: linear-gradient(135deg, #0077b6 0%, #00b4d8 100%);
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.modal-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 119, 182, 0.3);
-}
-
-.modal-btn:active {
-    transform: translateY(0);
-}
-
-@media (max-width: 600px) {
-    .modal-content {
-        width: 95%;
-        margin: 20% auto;
+    .medicine-order{
+        width:92%;
+        padding:70px 20px;
     }
 
-    .modal-body {
-        padding: 30px 20px;
+    .container{
+        width:92%;
     }
 
-    .modal-body h2 {
-        font-size: 20px;
+    .medicine-order h1{
+        font-size:30px;
     }
 
-    .modal-icon {
-        font-size: 36px;
+    .doctors .header h1{
+        font-size:28px;
     }
 
-    .coming-soon {
-        font-size: 16px;
+    .doctor-name{
+        font-size:20px;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    background:#0d3b66;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .doctor-card{
+        flex-direction:column;
+        align-items:flex-start;
     }
 
-    .modal-message {
-        font-size: 13px;
+    .price-section{
+        margin-top:20px;
+        width:100%;
+        text-align:left;
+    }
+
+    .doctors .header{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .medicine-order h1{
+        font-size:38px;
+    }
+}
+
+@media(max-width:600px){
+
+    .medicine-order{
+        width:92%;
+        padding:70px 20px;
+    }
+
+    .container{
+        width:92%;
+    }
+
+    .medicine-order h1{
+        font-size:30px;
+    }
+
+    .doctors .header h1{
+        font-size:28px;
+    }
+
+    .doctor-name{
+        font-size:20px;
     }
 }

@@ -1,126 +1,250 @@
-/* Doctor cards for Health Checkups page */
+/* =========================
+   HEALTH PACKAGES SECTION
+========================= */
 
-.doctors {
-  padding: 40px 20px;
+.health-packages{
+    padding: 50px 20px;
 }
 
-.doctors .container {
-  max-width: 1100px;
-  margin: 0 auto;
+/* Header */
+
+.package-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.doctors .header {
-  text-align: center;
-  margin-bottom: 30px;
+.package-header h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: #111827;
 }
 
-.doctors .header h1 {
-  color: #0077b6;
-  font-size: 34px;
-  margin-bottom: 10px;
+.package-header a{
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-.doctors .header p {
-  color: #666;
-  font-size: 16px;
+.package-header a:hover{
+    color: #023e8a;
 }
 
-.doctor-card {
-  background: #ffffff;
-  border-radius: 14px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-  padding: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin: 16px auto;
-  max-width: 860px;
+/* =========================
+   PACKAGE CONTAINER
+========================= */
+
+.package-container{
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap: 25px;
 }
 
-.doctor-img {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #eaf7ff;
-  font-size: 26px;
+/* =========================
+   PACKAGE CARD
+========================= */
+
+.package-card{
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    transition: 0.3s ease;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-.doctor-details {
-  flex: 1;
+.package-card:hover{
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 30px rgba(0,119,182,0.12);
 }
 
-.doctor-name {
-  font-weight: 700;
-  font-size: 18px;
-  color: #222;
-  margin-bottom: 4px;
+/* Top Area */
+
+.package-top{
+    display: flex;
+    gap: 15px;
 }
 
-.doctor-tag {
-  display: inline-block;
-  background: rgba(0, 119, 182, 0.12);
-  color: #0077b6;
-  font-weight: 700;
-  border-radius: 999px;
-  padding: 6px 12px;
-  font-size: 13px;
-  margin-bottom: 8px;
+/* Package Image */
+
+.package-top img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+
+    background: #f5f7ff;
+
+    border-radius: 12px;
+
+    padding: 10px;
 }
 
-.info-row {
-  color: #555;
-  font-size: 14px;
+/* Package Info */
+
+.package-info h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+
+    margin-bottom: 6px;
 }
 
-.price-section {
-  text-align: right;
-  min-width: 150px;
+.package-info p{
+    font-size: 14px;
+    color: #6b7280;
+
+    margin-bottom: 10px;
 }
 
-.fee-label {
-  display: block;
-  color: #666;
-  font-size: 13px;
-  margin-bottom: 4px;
+/* Smart Report */
+
+.smart-report{
+    display: inline-block;
+
+    background: #dff4ff;
+
+    color: #0077b6;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    padding: 6px 12px;
+
+    border-radius: 6px;
 }
 
-.fee-amount {
-  display: block;
-  color: #ff6f00;
-  font-weight: 900;
-  font-size: 22px;
-  margin-bottom: 10px;
+/* =========================
+   PRICE SECTION
+========================= */
+
+.package-price{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 25px;
+
+    gap: 15px;
 }
 
-.consult-btn {
-  display: inline-block;
-  text-decoration: none;
-  background: linear-gradient(135deg, #0077b6 0%, #00b4d8 100%);
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  transition: 0.2s;
+/* Price */
+
+.price{
+    font-size: 30px;
+    font-weight: 700;
+    color: #111827;
 }
 
-.consult-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 119, 182, 0.25);
+/* Old Price */
+
+.old-price{
+    font-size: 14px;
+    color: #9ca3af;
+    text-decoration: line-through;
+
+    margin-left: 8px;
 }
 
-@media (max-width: 768px) {
-  .doctor-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .price-section {
-    text-align: left;
-    min-width: unset;
-  }
+/* Discount */
+
+.discount{
+    font-size: 15px;
+    color: #16a34a;
+    font-weight: 700;
+
+    margin-left: 8px;
 }
 
+/* Add Button */
+
+.package-price button{
+    background: #0077b6;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 28px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.package-price button:hover{
+    background: #023e8a;
+
+    transform: scale(1.05);
+}
+
+/* =========================
+   REPORT TIME
+========================= */
+
+.report-time{
+    margin-top: 22px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e5e7eb;
+
+    font-size: 15px;
+
+    color: #4b5563;
+}
+
+.report-time strong{
+    color: #111827;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .package-header h2{
+        font-size: 28px;
+    }
+
+    .package-info h3{
+        font-size: 18px;
+    }
+
+    .price{
+        font-size: 24px;
+    }
+
+    .package-price{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .package-price button{
+        width: 100%;
+    }
+}
